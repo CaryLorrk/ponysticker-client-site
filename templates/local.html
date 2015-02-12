@@ -1,13 +1,1 @@
-<ion-view>
-    <div class="bar bar-subheader">
-        <h5>
-            <span translate>LOCAL_SELECTED</span>:
-            <span class="tag"
-                ng-repeat="tag in local.getKeys(local.selected)">
-                {{tag}}
-            </span>
-        </h5>
-    </div>
-    <ion-nav-view>
-    </ion-nav-view>
-</ion-view>
+<ion-view><div class="bar bar-subheader"><h5><span translate="">LOCAL_SELECTED</span>: <a class=tag ng-repeat="tag in local.getKeys(local.selected)" ng-click=local.deleteTag(tag)>{{tag}} <span style=color:#F77>x</span></a></h5></div><ion-nav-view></ion-nav-view></ion-view>
